@@ -28,7 +28,7 @@ angular.module('rentfinds.rentals', ['ngRoute','firebase'])
 		var city = $scope.city;
 
 		// Define Firebase Collection
-		var ref = new Firebase("https://viji-database.firebaseio.com/rentals");
+		var ref = new Firebase("https://rentapp-339de.firebaseio.com/rentals");
 
 		var query={
 			"city": city
@@ -82,7 +82,7 @@ angular.module('rentfinds.rentals', ['ngRoute','firebase'])
 	// Remove Rental
 	$scope.removeRental = function(rental, id){
 		// GET DB Instance
-		var ref = new Firebase('https://viji-database.firebaseio.com/rentals/'+ id);
+		var ref = new Firebase('https://rentapp-339de.firebaseio.com/rentals/'+ id);
 
 		ref.remove();
 
@@ -111,7 +111,7 @@ angular.module('rentfinds.rentals', ['ngRoute','firebase'])
 
 	function refresh(){
 		// Define Firebase Collection
-		var ref = new Firebase('https://viji-database.firebaseio.com/rentals');
+		var ref = new Firebase('https://rentapp-339de.firebaseio.com/rentals');
 
 		$scope.rentals = $firebaseArray(ref);
 
@@ -125,7 +125,7 @@ angular.module('rentfinds.rentals', ['ngRoute','firebase'])
 	$scope.id = $routeParams.id;
 
 	// GET DB Instance
-	var ref = new Firebase('https://viji-database.firebaseio.com/rentals/'+ $scope.id);
+	var ref = new Firebase('https://rentapp-339de.firebaseio.com/rentals/'+ $scope.id);
 
 	// GET Rental Data
 	var rentalData = $firebaseObject(ref);
@@ -140,7 +140,7 @@ angular.module('rentfinds.rentals', ['ngRoute','firebase'])
 	$scope.id = $routeParams.id;
 
 	// GET DB Instance
-	var ref = new Firebase('https://viji-database.firebaseio.com/rentals/'+ $scope.id);
+	var ref = new Firebase('https://rentapp-339de.firebaseio.com/rentals/'+ $scope.id);
 
 	// GET Rental Data
 	var rentalData = $firebaseObject(ref);
@@ -150,7 +150,7 @@ angular.module('rentfinds.rentals', ['ngRoute','firebase'])
 
 	$scope.editRental = function(rental, id){
 		// GET DB Instance
-		var ref = new Firebase('https://viji-database.firebaseio.com/rentals/'+ id);
+		var ref = new Firebase('https://rentapp-339de.firebaseio.com/rentals/'+ id);
 
 		$scope.msg = "Rental Updated";
 	}

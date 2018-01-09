@@ -19,9 +19,9 @@
 		<h3 class="page-heading">Latest Rentals</h3>
 		<div class="row rental" ng-repeat="rental in rentals">
 			<div class="small-4 columns">
-				<img id="t2" src="{{rental.image_url}}">
+				<img src="{{rental.image_url}}">
 			</div>
-			<div id="t1" class="small-8 columns">
+			<div class="small-8 columns">
 				<div class="label">{{rental.city}}</div>
 				<h3><a href="#details/{{rental.$id}}">{{rental.title}}</a></h3>
 				<p>{{rental.phone}}</p>

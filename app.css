@@ -31,7 +31,7 @@
 
 header{
   text-align: center;
-  background:#C1BDB2;
+  background:#f4f4f4;
   padding:20px;
   margin-bottom:0;
 }
@@ -56,7 +56,7 @@ header h1{
 }
 
 .details img{
-  width:100%;
+  width:60%;
 }
 
 .actions{
@@ -69,14 +69,6 @@ header h1{
   margin-left:10px;
 }
 
-
-#t1{
-margin-top: -96px;
-    margin-left: 242px;
-  }
-
-  #t2{
-    width: 165px;
-    height: 100px;
-    margin-left: 15px;
-  }
+.img{
+  width: 50px;
+}
